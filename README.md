@@ -24,7 +24,7 @@ Running the container is done with following command:
 
 ```sh
 docker run -ti --rm \
-    --name=cloudwatch-logs-tail \
+    --name=tailcloudwatch-logs \
     -v "$PWD/config.json":"/app/config.json" \
     -e LOG_GROUP_NAME=aws-cloudwatch-logs-group-name \
     -e LOG_STREAM_NAME=aws-cloudwatch-logs-stream-name \
