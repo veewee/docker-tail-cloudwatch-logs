@@ -9,8 +9,8 @@ This container provides an easy way to tail cloudwatch logs in your terminal.
 
 For cnnecting with AWS, a config.json needs to be added to the container:
 
-```json
-# config.json
+```js
+// config.json
 {
     "accessKeyId": "aws-acceskeyid",
     "secretAccessKey": "aws-secretAccessKey",
@@ -33,12 +33,12 @@ docker run -ti --rm \
 
 ### Volumes
 
-- *config.json*: Your aws config file needs to be synced to the `/app/config.json` file in the container.
+- **config.json**: Your aws config file needs to be synced to the `/app/config.json` file in the container.
 
 ### Envorinment variables
 
-- *LOG_GROUP_NAME*: The name of a group in cloudwatch logs.
-- *LOG_STREAM_NAME*: The name of a stream in cloudwatch logs.
+- **LOG_GROUP_NAME**: The name of a group in cloudwatch logs.
+- **LOG_STREAM_NAME**: The name of a stream in cloudwatch logs.
 
 
 ## Building the container
